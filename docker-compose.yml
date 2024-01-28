@@ -27,6 +27,6 @@ services:
       CRONTAB: "0 * * * * drush -r /var/www/html/web cron"
     command: sudo -E crond -f -d 0
     volumes:
-    - ./:/var/www/html:cached
+      - ./:/var/www/html:cached
 volumes:
   sql-data:
