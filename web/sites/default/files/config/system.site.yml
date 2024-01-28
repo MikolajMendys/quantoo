@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en-gb
+uuid: b52846e6-91fa-43a2-b1dd-dccc57fd70a8
+name: 'Quantoo Test'
+mail: mikolajmendys@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en-gb
