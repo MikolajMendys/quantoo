@@ -18,8 +18,7 @@
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
-        "drupal/core-recommended": "^10.2",
-        "drupal/webform": "^6.2"
+        "drupal/core-recommended": "^10.2"
     },
     "conflict": {
         "drupal/drupal": "*"
