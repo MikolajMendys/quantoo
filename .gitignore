@@ -13,6 +13,7 @@
 /web/sites/*/private
 /web/sites/*/files/*
 !/web/sites/*/files/config
+!/web/sites/*/settings.php
 
 # Ignore paths that may contain temporary files
 /web/sites/*/translations
