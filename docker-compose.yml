@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - sql-data:/var/lib/mysql 
+  drupal:
+    image: drupal:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./web:/var/www/html
+      - ./vendor:/opt/drupal/vendor
+      - ./composer.json:/opt/drupal/composer.json
+      - ./composer.lock:/opt/drupal/composer.lock
+    links:
+      - mysql
+    environment:
+      - MYSQL_USERNAME=root
+      - MYSQL_PASSWORD=root
+  crond:
+    init: true
+    image: wodby/drupal-php:8.3-dev-4.53.0
+    environment:
+      CRONTAB: "0 * * * * drush -r /var/www/html/web cron"
+    command: sudo -E crond -f -d 0
+    volumes:
+    - ./:/var/www/html:cached
+volumes:
+  sql-data:
