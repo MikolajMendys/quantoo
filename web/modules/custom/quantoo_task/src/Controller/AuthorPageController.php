@@ -15,7 +15,7 @@ class AuthorPageController extends ControllerBase {
    */
   public function content($name_and_surname) {
 
-    list($first_name, $last_name) = explode('-', $name_and_surname, 2);
+    [$first_name, $last_name] = explode('-', $name_and_surname, 2);
 
     $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties([
       'type' => 'autor',

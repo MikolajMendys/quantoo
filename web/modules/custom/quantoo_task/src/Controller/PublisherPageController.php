@@ -3,7 +3,6 @@
 namespace Drupal\quantoo_task\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\views\Views;
 
 /**
  * Controller for the Author page.

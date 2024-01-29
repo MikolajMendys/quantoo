@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * @file
+ * Provides custom_config_form functionality.
+ */
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_config_form_help($route_name, \Drupal\Core\Routing\CurrentRouteMatch $route_match) {
+  switch ($route_name) {
+    case 'help.page.custom_config_form':
+      return '<p>' . t('A simple module to add a configuration form.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function custom_config_form_menu() {
+  $items = [];
+
+  $items['admin/config/custom-config-form'] = [
+    'title' => 'Custom Config Form',
+    'description' => 'Configuration form for custom settings.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => ['custom_config_form_form'],
+    'access arguments' => ['administer site configuration'],
+    'type' => MENU_NORMAL_ITEM,
+  ];
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_config_form_theme() {
+  return [
+    'custom_config_form' => [
+      'render element' => 'form',
+    ],
+  ];
+}
+
+/**
+ * Form constructor for the Custom Config Form.
+ */
+function custom_config_form_form($form, FormStateInterface $form_state) {
+  $config = \Drupal::config('custom_config_form.settings');
+  $config_value = $config->get('custom_textfield');
+
+  $form['custom_textfield'] = [
+    '#type' => 'textfield',
+    '#title' => t('Custom Textfield'),
+    '#default_value' => $config_value,
+    '#description' => t('Enter your custom text.'),
+  ];
+
+  $form['submit'] = [
+    '#type' => 'submit',
+    '#value' => t('Save Configuration'),
+  ];
+
+  return $form;
+}
+
+/**
+ * Form submit handler for the Custom Config Form.
+ */
+function custom_config_form_form_submit($form, FormStateInterface $form_state) {
+  $config = \Drupal::configFactory()->getEditable('custom_config_form.settings');
+  $config->set('custom_textfield', $form_state->getValue('custom_textfield'));
+  $config->save();
+
+  // Show a message.
+  drupal_set_message(t('Configuration saved successfully.'));
+}

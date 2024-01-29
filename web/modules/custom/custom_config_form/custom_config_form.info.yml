@@ -1,0 +1,6 @@
+name: 'Custom Config Form'
+type: module
+description: 'A simple module to add a configuration form.'
+core_version_requirement: ^10
+package: Custom
+version: 1.0

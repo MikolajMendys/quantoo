@@ -1,0 +1,6 @@
+services:
+  custom_config_form.form:
+    class: '\Drupal\custom_config_form\Form\CustomConfigForm'
+    arguments: ['@config.factory']
+    tags:
+      - { name: 'form', route_name: 'custom_config_form.form' }
