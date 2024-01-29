@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for quantoo_task module.
+ */
+
+/**
+ * Implements hook_theme()
+*/
+function quantoo_task_theme() {
+    return [
+        'hello_block' => [
+            'variables' => [
+                'data' => [],
+            ],
+        ],
+    ];
+}

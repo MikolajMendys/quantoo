@@ -1,0 +1,5 @@
+name: 'quantoo_task'
+type: module
+description: 'Custom module for quantoo interview'
+package: Custom
+core_version_requirement: ^10

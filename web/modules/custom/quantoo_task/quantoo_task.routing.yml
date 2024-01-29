@@ -1,0 +1,23 @@
+quantoo_task.book:
+  path: '/ksiazka/{taxonomy}/{node_title}'
+  defaults:
+    _controller: '\Drupal\quantoo_task\Controller\BookPageController::content'
+    _title: 'Książka'
+  requirements:
+    _permission: 'access content'
+
+quantoo_task.author:
+  path: '/autor/{name_and_surname}'
+  defaults:
+    _controller: '\Drupal\quantoo_task\Controller\AuthorPageController::content'
+    _title: 'Autor'
+  requirements:
+    _permission: 'access_content'
+
+quantoo_task.publisher:
+  path: '/wydawnictwo/{title}'
+  defaults:
+    _controller: '\Drupal\quantoo_task\Controller\PublisherPageController::content'
+    _title: 'Wydawnictwo'
+  requirements:
+    _permission: 'access_content'
