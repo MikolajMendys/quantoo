@@ -1,0 +1,17 @@
+uuid: b799d2ba-24df-4a5f-8eb9-5b6abbc3f8d0
+langcode: en-gb
+status: true
+dependencies: {  }
+id: prod
+label: Prod
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: config_split_prod
+module:
+  admin_toolbar: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
