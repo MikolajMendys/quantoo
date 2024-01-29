@@ -1,0 +1,38 @@
+uuid: 70424b7f-880b-4382-86c4-44114c08fb1a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.autor.field_imie
+    - field.field.node.autor.field_zyciorys
+    - node.type.autor
+  module:
+    - text
+    - user
+id: node.autor.default
+targetEntityType: node
+bundle: autor
+mode: default
+content:
+  field_imie:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_zyciorys:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

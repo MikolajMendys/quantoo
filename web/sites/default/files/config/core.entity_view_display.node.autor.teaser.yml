@@ -1,0 +1,25 @@
+uuid: f60478ba-22be-4c15-86b3-1208305aaa69
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.autor.field_imie
+    - field.field.node.autor.field_zyciorys
+    - node.type.autor
+  module:
+    - user
+id: node.autor.teaser
+targetEntityType: node
+bundle: autor
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imie: true
+  field_zyciorys: true
+  langcode: true

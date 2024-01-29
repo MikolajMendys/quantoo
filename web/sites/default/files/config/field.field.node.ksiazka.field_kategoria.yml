@@ -1,0 +1,29 @@
+uuid: 43c53473-5cce-465a-b4f8-b424d7abe0f3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kategoria
+    - node.type.ksiazka
+    - taxonomy.vocabulary.kategoria
+id: node.ksiazka.field_kategoria
+field_name: field_kategoria
+entity_type: node
+bundle: ksiazka
+label: Kategoria
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      kategoria: kategoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

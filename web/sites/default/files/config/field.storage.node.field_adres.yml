@@ -1,0 +1,20 @@
+uuid: 96f1c8ae-e3e2-4d03-a36a-1458c7d459ad
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_adres
+field_name: field_adres
+entity_type: node
+type: text
+settings:
+  max_length: 500
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

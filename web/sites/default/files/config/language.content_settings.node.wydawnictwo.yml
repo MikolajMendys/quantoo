@@ -1,0 +1,11 @@
+uuid: fa71939e-2001-489f-813f-62e326e539b5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.wydawnictwo
+id: node.wydawnictwo
+target_entity_type_id: node
+target_bundle: wydawnictwo
+default_langcode: site_default
+language_alterable: false

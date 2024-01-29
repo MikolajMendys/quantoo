@@ -1,0 +1,11 @@
+uuid: 83757806-cc34-4f4c-871d-179bdc7a52b7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.autor
+id: node.autor
+target_entity_type_id: node
+target_bundle: autor
+default_langcode: site_default
+language_alterable: false

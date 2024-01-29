@@ -1,0 +1,24 @@
+uuid: 9083807f-e9b5-4cb6-9ea2-eca068e8f866
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adres
+    - filter.format.full_html
+    - node.type.wydawnictwo
+  module:
+    - text
+id: node.wydawnictwo.field_adres
+field_name: field_adres
+entity_type: node
+bundle: wydawnictwo
+label: Adres
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text

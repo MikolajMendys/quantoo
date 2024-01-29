@@ -1,0 +1,18 @@
+uuid: 6a95c2fe-f933-4f3d-a28b-8da6e8ae6039
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.wydawnictwo
+id: node.wydawnictwo.title
+field_name: title
+entity_type: node
+bundle: wydawnictwo
+label: Nazwa
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

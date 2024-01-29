@@ -1,0 +1,81 @@
+uuid: 4538b98c-9a83-417e-8955-d2a38e9aacea
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.ksiazka.field_autor
+    - field.field.node.ksiazka.field_dodatkowe_zdjecia
+    - field.field.node.ksiazka.field_kategoria
+    - field.field.node.ksiazka.field_opis
+    - field.field.node.ksiazka.field_wydawnictwo
+    - field.field.node.ksiazka.field_zdjecie_okladki
+    - node.type.ksiazka
+  module:
+    - image
+    - text
+    - user
+id: node.ksiazka.default
+targetEntityType: node
+bundle: ksiazka
+mode: default
+content:
+  field_autor:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_dodatkowe_zdjecia:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_kategoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_opis:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_wydawnictwo:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_zdjecie_okladki:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

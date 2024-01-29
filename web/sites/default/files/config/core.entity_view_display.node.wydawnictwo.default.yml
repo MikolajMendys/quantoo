@@ -1,0 +1,37 @@
+uuid: fbcfa088-67ba-4427-bf5d-939b1f4f3d59
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.wydawnictwo.field_adres
+    - field.field.node.wydawnictwo.field_opis_wydawnictwa
+    - node.type.wydawnictwo
+  module:
+    - text
+    - user
+id: node.wydawnictwo.default
+targetEntityType: node
+bundle: wydawnictwo
+mode: default
+content:
+  field_adres:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_opis_wydawnictwa:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 2409d83f-e229-46a8-9817-1af72031ab86
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.ksiazka
+id: node.ksiazka
+target_entity_type_id: node
+target_bundle: ksiazka
+default_langcode: site_default
+language_alterable: false

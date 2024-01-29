@@ -1,0 +1,24 @@
+uuid: 0330b2ee-8e69-48d3-a458-c09d647c0fec
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opis_wydawnictwa
+    - filter.format.full_html
+    - node.type.wydawnictwo
+  module:
+    - text
+id: node.wydawnictwo.field_opis_wydawnictwa
+field_name: field_opis_wydawnictwa
+entity_type: node
+bundle: wydawnictwo
+label: 'Opis wydawnictwa'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

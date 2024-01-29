@@ -1,0 +1,33 @@
+uuid: 27ae784e-66ef-44d0-84f6-541709680aa6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ksiazka.field_autor
+    - field.field.node.ksiazka.field_dodatkowe_zdjecia
+    - field.field.node.ksiazka.field_kategoria
+    - field.field.node.ksiazka.field_opis
+    - field.field.node.ksiazka.field_wydawnictwo
+    - field.field.node.ksiazka.field_zdjecie_okladki
+    - node.type.ksiazka
+  module:
+    - user
+id: node.ksiazka.teaser
+targetEntityType: node
+bundle: ksiazka
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_autor: true
+  field_dodatkowe_zdjecia: true
+  field_kategoria: true
+  field_opis: true
+  field_wydawnictwo: true
+  field_zdjecie_okladki: true
+  langcode: true

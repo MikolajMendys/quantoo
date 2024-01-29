@@ -1,0 +1,25 @@
+uuid: 63594af9-284d-4343-845f-fff30394d63b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wydawnictwo.field_adres
+    - field.field.node.wydawnictwo.field_opis_wydawnictwa
+    - node.type.wydawnictwo
+  module:
+    - user
+id: node.wydawnictwo.teaser
+targetEntityType: node
+bundle: wydawnictwo
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_adres: true
+  field_opis_wydawnictwa: true
+  langcode: true

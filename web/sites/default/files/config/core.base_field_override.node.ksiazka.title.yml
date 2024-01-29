@@ -1,0 +1,18 @@
+uuid: 93dc5ea8-93f0-4128-a9cb-46ce4d88e0ad
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.ksiazka
+id: node.ksiazka.title
+field_name: title
+entity_type: node
+bundle: ksiazka
+label: Tytuł
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: d9ec8c0a-5897-4016-b801-c466c7cf3e61
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zyciorys
+    - filter.format.full_html
+    - node.type.autor
+  module:
+    - text
+id: node.autor.field_zyciorys
+field_name: field_zyciorys
+entity_type: node
+bundle: autor
+label: Życiorys
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
