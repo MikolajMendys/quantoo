@@ -1,0 +1,14 @@
+uuid: 58c46cd2-9cd8-42de-991a-7924af812d65
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - user.role.zarzadzanie_ksiazkami
+  module:
+    - user
+id: user_add_role_action.zarzadzanie_ksiazkami
+label: 'Add the Zarzadzanie książkami role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: zarzadzanie_ksiazkami
